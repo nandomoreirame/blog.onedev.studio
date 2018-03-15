@@ -1,7 +1,8 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 12 # it will paginate after this number
+paginate: 12
+paginate_path: "/page/:num"
 language: 'pt-br'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
@@ -27,8 +28,8 @@ twitter: onedevstudioweb
 # facebook: oseunando
 
 # Disqus
-disqus: False
-disqus_shortname: onedevstudio
+disqus: true
+disqus_shortname: fernandomoreira
 
 # Google Analytics
 google_analytics: UA-00000000-1
@@ -39,6 +40,8 @@ permalink: /:title
 # Authors' info in `_data/authors.yml`
 # Tags' info in `_data/tags_info.yml`
 
+plugins_dir: ./_plugins
+
 # gems and other configs
 plugins:
   - jekyll-paginate
@@ -46,6 +49,12 @@ plugins:
 
 feed:
   path: feed.xml
+
+compress_html:
+  clippings: all
+  comments:  all
+  endings: all
+  profile: false
 
 exclude:
   - assets/css
