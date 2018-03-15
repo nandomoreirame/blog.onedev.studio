@@ -1,48 +1,65 @@
-lang: 'pt_BR'
-baseurl: ""
-url: ""
-title: Blog.onedev.studio
-email: nandomoreira.me@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-image: ''
-author: 'Fernando Moreira'
-twitter_username: oseunando
-github_username:  nandomoreirame
-dribbble_username: umdevux
-facebook_username: oseunando
-linkedin_username: nandomoreirame
-
-# logo: ''
-social:
-  name: Fernando Moreira
-  links:
-    - https://twitter.com/oseunando
-    - https://github.com/nandomoreirame
-    - https://www.linkedin.com/in/nandomoreirame
-    - https://www.facebook.com/oseunando
-twitter:
-  username: oseunando
-# google_site_verification: '123'
-
-# Build settings
+# Jekyll configuration
 markdown: kramdown
+highlighter: rouge
+paginate: 12 # it will paginate after this number
+language: 'pt-br'
+
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+# baseurl: /jasper2/
+baseurl: ""
+
+# Website info
+title: Blog.onedev.studio
+description: The professional publishing platform
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+production_url: http://blog.onedev.studio/
+source_url: https://github.com/onedevstudio/blog/
+
+# Social info
+navigation: true # show the navbar links
+subscribers: true # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: onedevstudioweb
+# facebook: oseunando
+
+# Disqus
+disqus: False
+disqus_shortname: onedevstudio
+
+# Google Analytics
+google_analytics: UA-00000000-1
+
+# Permalinks
+permalink: /:title
+
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
+
+# gems and other configs
 plugins:
+  - jekyll-paginate
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+feed:
+  path: feed.xml
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - assets/css
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - docker-compose.yml
-  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile_
+  - Gemfile.lock
+  - gulpfile.js
   - LICENSE
+  - package.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*
