@@ -10,7 +10,7 @@ baseurl: ""
 # Website info
 title: Onedev.studio
 description: Um estúdio digital focado em consultoria e desenvolvimento web.
-cover: assets/images/blog-cover.jpg
+cover: assets/images/blog-cover.png
 logo: false
 logo_dark: false
 favicon: assets/images/favicon.png
