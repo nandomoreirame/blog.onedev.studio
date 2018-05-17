@@ -51,19 +51,16 @@ layout: compress
   {% endif %}
 
   <!-- highlight.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-  <script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script> -->
+  <!-- <script>
     $(document).ready(function () {
       $('pre code').each(function (i, block) {
         hljs.highlightBlock(block);
       });
     });
-  </script>
+  </script> -->
 
-  <!-- jQuery + Fitvids, which makes all video embeds responsive -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
 
   <!-- Paginator increased to "infinit" in _config.yml -->
   <!-- if paginator.posts  -->
@@ -72,22 +69,18 @@ layout: compress
     </script>
     <script src="{{ site.baseurl }}/assets/js/infinitescroll.js"></script> -->
   <!-- /endif -->
-
+  <!--
   {% if paginator.total_pages > site.paginate %}
     <script>
       var maxPages = parseInt('{{ paginator.total_pages }}');
     </script>
 
     <script src="{{ site.baseurl }}/assets/js/infinitescroll.js"></script>
+  {% endif %} -->
+
+  {% if page.class == "post-template" %}
+    {% include post-scripts.html %}
+  {% elsif page.class == "page-template" %}
+    {% include page-scripts.html %}
   {% endif %}
-
-
-  <!-- Add Google Analytics  -->
-  {% include analytics.html %}
-
-  <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-  {% if page.class == "post-template" %} {% include post-scripts.html %} {% elsif page.class == "page-template" %} {% include page-scripts.html %} {% endif %}
-
-  <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-  <!-- ghost_foot -->
 </body>
