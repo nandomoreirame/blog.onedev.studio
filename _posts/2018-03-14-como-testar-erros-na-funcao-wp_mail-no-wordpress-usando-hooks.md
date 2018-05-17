@@ -5,7 +5,10 @@ navigation: True
 title: Como testar erros na função wp_mail() no WordPress usando hooks
 date: 2018-03-14
 category: WordPress
-tags: 'wordpress, function, php'
+tags:
+- wordpress
+- function
+- php
 description: "A dica hoje será bem rápida, iremos testar erros na função wp_mail() no WordPress usando hooks."
 cover: assets/images/posts/wp_mail_faild-hook-function.png
 class: post-template

@@ -7,7 +7,10 @@ description: "Nesse artigo vou mostrar como instalar a WP-CLI, uma interface de 
 keywords: "wordpress, wp, cli, wp-cli, comando, linha, interface"
 cover: assets/images/posts/wp-cli-help.png
 categories: wordpress
-tags: wordpress
+tags:
+- wordpress
+- cli
+- wpcli
 class: post-template
 subclass: 'post'
 author: nandomoreira
