@@ -2,30 +2,23 @@
 layout: compress
 ---
 <!DOCTYPE html>
+<!--
+    site designed and developed by nandomoreira.me | nandomoreira.me[at]gmail.com
+    https://twitter.com/oseunando | https://github.com/nandomoreirame
+-->
 <html>
-
 <head>
-
-  <!-- Document Settings -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Base Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% include dynamic_title.html %}
   <title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Styles'n'Scripts -->
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/built/screen.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/built/screen.edited.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bundle.css">
   <!-- highlight.js -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <style>
-    .hljs {
-      background: none;
-    }
-  </style>
-
+  <style>.hljs{background:none}</style>
   <!-- This tag outputs SEO meta+structured data and other important settings -->
   {% include head.html %}
 </head>
@@ -69,7 +62,7 @@ layout: compress
     <a class="subscribe-overlay-close" href="#"></a>
     <div class="subscribe-overlay-content">
       {% if site.logo %}
-      <img class="subscribe-overlay-logo" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }}" /> {% endif %}
+      <img class="subscribe-overlay-logo" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }}"> {% endif %}
       <h1 class="subscribe-overlay-title">Subscribe to {{ site.title }}</h1>
       <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
       {% include subscribe-form.html placeholder="youremail@example.com" %}
@@ -118,7 +111,5 @@ layout: compress
 
   <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
   <!-- ghost_foot -->
-
 </body>
-
 </html>

@@ -7,6 +7,7 @@ const nodemon = require('gulp-nodemon');
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
+const concat = require('gulp-concat');
 
 // postcss plugins
 const autoprefixer = require('autoprefixer');
@@ -39,12 +40,17 @@ gulp.task('css', () => {
     cssnano()
   ];
 
-  return gulp.src('assets/css/*.css')
+  return gulp.src([
+    'assets/css/global.css',
+    'assets/css/screen.css',
+    'assets/css/screen.edited.css'
+  ])
     .on('error', swallowError)
     .pipe(sourcemaps.init())
+    .pipe(concat('bundle.css'))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets/built/'))
+    .pipe(gulp.dest('assets/css'))
     .pipe(livereload());
 });
 

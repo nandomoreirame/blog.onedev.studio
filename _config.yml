@@ -5,19 +5,16 @@ paginate: 12
 paginate_path: "/page/:num"
 language: 'pt-br'
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-# baseurl: /jasper2/
 baseurl: ""
 
 # Website info
-title: Blog.onedev.studio
-description: The professional publishing platform
+title: Onedev.studio
+description: Um estúdio digital focado em consultoria e desenvolvimento web.
 cover: assets/images/blog-cover.jpg
 logo: false
 logo_dark: false
 favicon: assets/images/favicon.png
-production_url: http://blog.onedev.studio/
-source_url: https://github.com/onedevstudio/blog/
+production_url: https://blog.onedev.studio/
 
 # Social info
 navigation: true # show the navbar links
@@ -32,7 +29,7 @@ disqus: true
 disqus_shortname: fernandomoreira
 
 # Google Analytics
-google_analytics: UA-00000000-1
+google_analytics: UA-119443578-1
 
 # Permalinks
 permalink: /:title
@@ -57,7 +54,6 @@ compress_html:
   profile: false
 
 exclude:
-  - assets/css
   - node_modules
   - vendor
   - Gemfile
