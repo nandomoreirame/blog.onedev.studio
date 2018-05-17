@@ -18,7 +18,7 @@ production_url: https://blog.onedev.studio/
 
 # Social info
 navigation: true # show the navbar links
-subscribers: true # you need to connect an external service for this to work,
+subscribers: false # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
 twitter: onedevstudioweb
