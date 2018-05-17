@@ -50,7 +50,7 @@ gulp.task('css', () => {
     .pipe(concat('bundle.css'))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_includes/css'))
     .pipe(livereload());
 });
 

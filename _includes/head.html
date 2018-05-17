@@ -1,3 +1,9 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% include dynamic_title.html %}
+<title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon }}" type="image/png">
 <link rel="canonical" href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}">
@@ -58,3 +64,8 @@
 
 <meta name="generator" content="Jekyll 3.6.2">
 <link rel="alternate" type="application/rss+xml" title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" href="{{ site.baseurl }}/feed.xml">
+<style>
+{% include css/bundle.css %}
+</style>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<style>.hljs{background:none}</style>
