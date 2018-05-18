@@ -6,6 +6,8 @@ paginate_path: "/page/:num"
 language: 'pt-br'
 
 baseurl: ""
+production_url: https://blog.onedev.studio/
+url: "https://blog.onedev.studio"
 
 # Website info
 title: Onedev.studio
@@ -14,7 +16,6 @@ cover: assets/images/blog-cover.png
 logo: false
 logo_dark: false
 favicon: assets/images/favicon.png
-production_url: https://blog.onedev.studio/
 
 # Social info
 navigation: true # show the navbar links
