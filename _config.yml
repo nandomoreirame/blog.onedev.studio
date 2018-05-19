@@ -1,7 +1,7 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 12
+paginate: 6
 paginate_path: "/page/:num"
 language: 'pt-br'
 
@@ -18,10 +18,7 @@ logo_dark: false
 favicon: assets/images/favicon.png
 
 # Social info
-navigation: true # show the navbar links
-subscribers: false # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
+navigation: True
 twitter: onedevstudioweb
 # facebook: oseunando
 

@@ -15,6 +15,7 @@
   },
   "bugs": "https://github.com/nandomoreirame/blog.onedev.studio/issues",
   "scripts": {
+    "watch": "gulp watch",
     "build": "gulp build",
     "dev": "gulp"
   },

@@ -19,6 +19,17 @@ Sabemos que da pra fazer bastante coisa no WordPress usando os famosos hooks e s
 
 Sabendo disso o **WordPress** já nos deu uma [saída dessa cilada bino!](/assets/images/posts/its-a-trap-bino.jpg)
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4127347619042526"
+     data-ad-slot="6057141739"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 [Usando o hook `wp_mail_failed`](https://developer.wordpress.org/reference/hooks/wp_mail_failed/) podemos criar uma função para captar os erros gerados pela `wp_mail()`.
 
 ```php

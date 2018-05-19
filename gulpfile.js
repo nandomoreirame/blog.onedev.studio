@@ -46,10 +46,10 @@ gulp.task('css', () => {
     'assets/css/screen.edited.css'
   ])
     .on('error', swallowError)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(concat('bundle.css'))
     .pipe(postcss(processors))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('_includes/css'))
     .pipe(livereload());
 });

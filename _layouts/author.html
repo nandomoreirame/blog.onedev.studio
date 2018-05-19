@@ -53,12 +53,16 @@ logo: 'assets/images/ghost.png'
 
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+    <div class="inner content container">
 
         <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {%  include post-card.html %}
+          <div class="post-feed-inner">
+              <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+              {%  include post-card.html %}
+          </div>
         </div>
+
+        {%  include sidebar.html %}
 
     </div>
 </main>

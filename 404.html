@@ -23,21 +23,20 @@ permalink: 404.html
 
   <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
       <section class="error-message">
         <h1 class="error-code">404</h1>
-        <p class="error-description">Page not found</p>
-        <a class="error-link" href="{{ site.baseurl }}/">Go to the front page →</a>
+        <p class="error-description">Oops... Página não encontrada.</p> <br>
+        <a class="error-link" href="{{ site.baseurl }}/">Ir para a página inicial →</a>
       </section>
     </div>
   </main>
 
-  <!-- get "posts" limit="3" -->
   <aside class="outer">
-    <div class="inner">
+    <div class="inner content">
       <div class="post-feed">
-        <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-        {% include post-card-error.html %}
+        <div class="post-feed-inner">
+          {% include post-card-error.html %}
+        </div>
       </div>
     </div>
   </aside>
