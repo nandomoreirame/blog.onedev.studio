@@ -52,6 +52,9 @@ compress_html:
   endings: all
   profile: false
 
+include:
+  - _redirects
+  
 exclude:
   - assets/css
   - node_modules
